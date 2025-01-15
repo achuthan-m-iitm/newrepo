@@ -1,9 +1,9 @@
 name: Hello World Workflow
 
 on: 
-  push:          # Triggers when code is pushed
+  push:           # Triggers when code is pushed
     branches:
-      - main     # Runs only on the main branch
+      - main      # Runs only on the main branch
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -17,5 +17,5 @@ jobs:
       - name: Print Hello Message
         run: echo "Hello, GitHub Actions!"
 
-      - name: Print Email
+      - name: Print Email Address  # 🔥 Changed step name (no special characters)
         run: echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
