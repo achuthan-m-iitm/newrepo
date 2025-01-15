@@ -17,5 +17,5 @@ jobs:
       - name: Print Hello Message
         run: echo "Hello, GitHub Actions!"
 
-      - name: Email Step ✅  # 🔥 Changed from your email to a valid step name
+      - name: Print Email
         run: echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
