@@ -1,7 +1,7 @@
 name: Hello World Workflow
 
-on: 
-  push:           # Triggers when code is pushed
+on:
+  push:           # Trigger when code is pushed
     branches:
       - main      # Runs only on the main branch
   workflow_dispatch:  # Allows manual triggering
@@ -12,12 +12,11 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4  # Checks out the repo
+        uses: actions/checkout@v4  # Checkout code
 
       - name: Print Hello Message
-        run: |
-          echo "Hello, GitHub Actions!"
+        run: echo "Hello, GitHub Actions!"
 
-      - name: Print Email Address  # ✅ No special characters
+      - name: "22f3002867@ds.study.iitm.ac.in"  # ✅ Wrapped email in DOUBLE QUOTES
         run: |
           echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
