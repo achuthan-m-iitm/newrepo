@@ -1,1 +1,22 @@
+name: Hello World Workflow
+
+on: 
+  push:          # Triggers when code is pushed
+    branches:
+      - main     # Runs only on the main branch
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # Runs on the latest Ubuntu VM
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4  # Checks out the repo
+
+      - name: Print Hello Message
+        run: echo "Hello, GitHub Actions!"
+
+      - name: 22f3002867@ds.study.iitm.ac.in  # ✅ Your Email in the Action
+        run: echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
 
