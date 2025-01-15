@@ -8,14 +8,16 @@ on:
 
 jobs:
   say-hello:
-    runs-on: ubuntu-latest  # Runs on the latest Ubuntu VM
+    runs-on: ubuntu-latest  # Runs on Ubuntu
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4  # Checks out the repo
 
       - name: Print Hello Message
-        run: echo "Hello, GitHub Actions!"
+        run: |
+          echo "Hello, GitHub Actions!"
 
-      - name: Print Email Address  # 🔥 Changed step name (no special characters)
-        run: echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
+      - name: Print Email Address  # ✅ No special characters
+        run: |
+          echo "This step contains my email: 22f3002867@ds.study.iitm.ac.in"
